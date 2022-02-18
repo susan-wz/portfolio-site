@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const leftRight = () => keyframes`
   0% {
@@ -20,6 +20,7 @@ export const LinkContainer = styled.div`
   p:after {
     content: "";
     position: absolute;
+    margin-top: 8px;
     width: 100%;
     display: block;
     height: 4px;
