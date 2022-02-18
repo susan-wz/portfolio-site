@@ -13,6 +13,9 @@ export const LinkContainer = styled.div`
   min-width: 110px;
   margin: 16px;
   position: relative;
+  :hover {
+    cursor: pointer;
+  }
   p {
     color: ${(props) => props.theme.colors.white};
     font-size: 28px;
