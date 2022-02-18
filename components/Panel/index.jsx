@@ -1,12 +1,15 @@
-import * as styles from './styles'
+import Nav from "../Nav";
 
-const Panel = () => {
-  const test = 'test'
+import * as styles from "./styles";
+
+const Panel = ({ children, backgroundColor, hasNav }) => {
+  const test = "test";
   return (
-    <styles.PanelContainer>
-      
+    <styles.PanelContainer {...{ backgroundColor }}>
+      {hasNav && <Nav />}
+      {children}
     </styles.PanelContainer>
-  )
-}
+  );
+};
 
-export default Panel
+export default Panel;
