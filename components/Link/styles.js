@@ -1,25 +1,32 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
+
+const leftRight = () => keyframes`
+  0% {
+    width: 10%;
+    }
+  100% {
+    width: 100%;
+  }
+`;
 
 export const LinkContainer = styled.div`
-  width: 100%;
-  p { 
-    color: ${props => props.theme.colors.white};
+  min-width: 110px;
+  margin: 16px;
+  position: relative;
+  p {
+    color: ${(props) => props.theme.colors.white};
     font-size: 28px;
   }
-  p:after {    
-    background: none repeat scroll 0 0 transparent;
-    // bottom: 0;
+  p:after {
     content: "";
+    position: absolute;
+    width: 100%;
     display: block;
     height: 4px;
-    // left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    // width: 0;
+    background: ${(props) => props.theme.colors.secondary};
   }
-  p:hover:after { 
-    width: 100%; 
-    left: 0; 
+  p:hover:after {
+    width: 100%;
+    animation: ${leftRight} 500ms ease-in-out;
   }
 `;
