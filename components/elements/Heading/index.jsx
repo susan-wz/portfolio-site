@@ -1,6 +1,6 @@
 import * as styles from "./styles";
 
-const Heading = ({ level = "h1", text, color = 'secondary' }) => {
+export const Heading = ({ level = "h1", text, color = 'secondary' }) => {
   const test = "test";
   switch (level) {
     case "h1":
@@ -13,5 +13,3 @@ const Heading = ({ level = "h1", text, color = 'secondary' }) => {
       return <styles.H1 {...{ color }}>{text}</styles.H1>;
   }
 };
-
-export default Heading;

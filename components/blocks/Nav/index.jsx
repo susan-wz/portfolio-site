@@ -1,9 +1,9 @@
-import Link from "../Link";
 import Image from "next/image";
+import { Link } from '../../elements'
 
 import * as styles from "./styles";
 
-const Nav = () => {
+export const Nav = () => {
   const test = "test";
   return (
     <styles.NavContainer>
@@ -21,5 +21,3 @@ const Nav = () => {
     </styles.NavContainer>
   );
 };
-
-export default Nav;

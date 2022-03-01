@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import * as styles from "./styles";
 
-const Button = ({ icon, text, target }) => {
+export const Button = ({ icon, text, target }) => {
   const test = "test";
   return (
     <styles.ButtonContainer>
@@ -16,5 +16,3 @@ const Button = ({ icon, text, target }) => {
     </styles.ButtonContainer>
   );
 };
-
-export default Button;
