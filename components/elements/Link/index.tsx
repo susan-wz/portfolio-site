@@ -1,6 +1,11 @@
 import * as styles from "./styles";
 
-export const Link = ({ text, target }) => {
+interface LinkProps {
+  text: string;
+  target: string;
+}
+
+export const Link = ({ text, target }: LinkProps): React.ReactElement => {
   const test = "test";
   return (
     <styles.LinkContainer>

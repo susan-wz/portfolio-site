@@ -2,7 +2,13 @@ import Image from "next/image";
 
 import * as styles from "./styles";
 
-export const Button = ({ icon, text, target }) => {
+interface ButtonProps {
+  icon: string
+  text: string
+  target: string
+}
+
+export const Button = ({ icon, text, target }: ButtonProps): React.ReactElement => {
   const test = "test";
   return (
     <styles.ButtonContainer>

@@ -1,6 +1,12 @@
 import * as styles from "./styles";
 
-export const Heading = ({ level = "h1", text, color = 'secondary' }) => {
+interface HeadingProps {
+  level: string
+  text: string
+  color: string
+}
+
+export const Heading = ({ level = "h1", text, color = 'secondary' }: HeadingProps): React.ReactElement => {
   const test = "test";
   switch (level) {
     case "h1":
