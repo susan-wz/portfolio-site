@@ -1,9 +1,9 @@
 import * as styles from "./styles";
 
 interface TextProps {
-  size: string
+  size?: string
   text: string
-  color: string
+  color?: string
 }
 
 export const Text = ({ size = "medium", text, color = "white" }: TextProps): React.ReactElement => {

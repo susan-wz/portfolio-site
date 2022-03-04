@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Link } from '../../elements'
+import { Link } from "../../elements";
 
 import * as styles from "./styles";
 
-export const Nav = () => {
+export const Nav = (): React.ReactElement => {
   const test = "test";
   return (
     <styles.NavContainer>
@@ -14,9 +14,9 @@ export const Nav = () => {
         alt="leaf logo"
       />
       <styles.LinksContainer>
-        <Link text="About me" />
-        <Link text="Side projects" />
-        <Link text="My toolbox" />
+        <Link text="About me" target="" />
+        <Link text="Side projects" target="" />
+        <Link text="My toolbox" target="" />
       </styles.LinksContainer>
     </styles.NavContainer>
   );
