@@ -3,8 +3,6 @@ import { useIsMobileDevice } from "../../../hooks";
 
 import * as styles from "./styles";
 
-// children is type React children or something i dunno look it up React.ReactChildren | React.ReactChildren[] ... unionType?
-
 interface PageProps {
   children: React.ReactChild | React.ReactChild[]
   backgroundColor: string
