@@ -8,7 +8,7 @@ import * as styles from "./styles";
 interface PageProps {
   children: React.ReactChild | React.ReactChild[]
   backgroundColor: string
-  hasNav: boolean
+  hasNav?: boolean
 }
 
 export const Page = ({ children, backgroundColor, hasNav }) => {

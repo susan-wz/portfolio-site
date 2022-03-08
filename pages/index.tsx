@@ -13,8 +13,8 @@ export default function Home() {
       <Page hasNav backgroundColor={"primary"}>
         <AboutMe />
       </Page>
-      <Page backgroundColor={"gradient"} />
-      <Page backgroundColor={"primary"} />
+      <Page backgroundColor={"gradient"}><div /></Page>
+      <Page backgroundColor={"primary"}><div /></Page>
     </div>
   );
 }

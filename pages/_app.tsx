@@ -26,7 +26,7 @@ const theme = {
   },
 };
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
@@ -37,4 +37,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default App;
