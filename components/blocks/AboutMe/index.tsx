@@ -11,7 +11,7 @@ export const AboutMe = (): React.ReactElement => {
     <styles.AboutMePage>
       <div>
         <Heading level="h1" text="Hello! I'm Susan." color="secondary" />
-        <Text text="I’m a software developer based in Toronto, Canada. I’ve been creating fun tidbits for the world wide web since November 2019. Currently, I’m focused on building a engaging customer chat experience at Telus Digital. " />
+        <Text text="I’m a software developer based in Toronto, Canada. I’ve been creating fun tidbits for the world wide web since November 2019. Currently, I’m focused on building an engaging customer chat experience at Telus Digital. " />
         <styles.LinkContainer>
           <Button text="Download resume" icon="download" target="" />
           <IconButton
