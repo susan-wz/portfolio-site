@@ -1,6 +1,8 @@
 import type { AppProps } from 'next/app'
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
+import { theme } from '../styles/theme'
+
 const GlobalStyle = createGlobalStyle`
   html, body {
     margin: 0;
@@ -17,15 +19,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 `;
-
-const theme = {
-  colors: {
-    primary: "#173F36",
-    secondary: "#F8C164",
-    gradient: "linear-gradient(180deg, #ECF7E9 0%, #FFFFFF 100%)",
-    white: "#ffffff",
-  },
-};
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
