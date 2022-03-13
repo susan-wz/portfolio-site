@@ -7,7 +7,7 @@ export const Toolbox = (): React.ReactElement => {
   const isMobile = useIsMobileDevice();
   return (
     <styles.ToolboxPage>
-      <Heading level="h1" text="Projects" color="secondary" />
+      <Heading level="h1" text="Toolbox" color="secondary" />
     </styles.ToolboxPage>
   );
 };

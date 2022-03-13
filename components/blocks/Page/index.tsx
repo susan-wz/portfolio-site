@@ -1,4 +1,5 @@
 import { Nav } from "../Nav";
+import { MobileNav } from "../MobileNav";
 import { useIsMobileDevice } from "../../../hooks";
 
 import * as styles from "./styles";
@@ -14,7 +15,7 @@ export const Page = ({ children, backgroundColor, hasNav }) => {
   return (
     <styles.PageContainer {...{ backgroundColor }}>
       {hasNav && !isMobile && <Nav />}
-      {hasNav && isMobile && <div>hello</div>}
+      {hasNav && isMobile && <MobileNav />}
       {children}
     </styles.PageContainer>
   );

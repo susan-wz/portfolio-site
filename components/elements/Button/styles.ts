@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const ButtonContainer = styled.button`
   height: 48px;
   border-radius: 16px;
-  display: inline-flex;
   align-items: center;
   background-color: ${(props) => props.theme.colors.secondary};
   padding: 0px 16px;
   font-size: 16px;
+  display: inline-flex;
   @media (min-width: 768px) {
     font-size: 28px;
   }
