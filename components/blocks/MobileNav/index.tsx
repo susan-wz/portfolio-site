@@ -8,29 +8,29 @@ export const MobileNav = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const test = "test";
   return (
-    <styles.MobileNavContainer>
+    <styles.HeaderContainer>
       <Image
         src="/images/leaf-svgrepo-com.svg"
         height={48}
         width={48}
         alt="leaf logo"
       />
-      <styles.MenuToggle onClick={() => setIsOpen(!isOpen)}>
-        <button>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </styles.MenuToggle>
-      {isOpen && (
-        <styles.LinksContainer>
-          <li>hi</li>
-          <li>hello</li>
-          {/* <Link text="About me" target="" />
-        <Link text="Side projects" target="" />
-        <Link text="My toolbox" target="" /> */}
-        </styles.LinksContainer>
-      )}
-    </styles.MobileNavContainer>
+      <styles.MobileNavContainer>
+        <styles.MenuToggle onClick={() => setIsOpen(!isOpen)}>
+          <button>
+            <p />
+            <p />
+            <p />
+          </button>
+        </styles.MenuToggle>
+        {isOpen && (
+          <styles.LinksContainer>
+            <Link text="About me" target="" align="right" />
+            <Link text="Side projects" target="" align="right" />
+            <Link text="My toolbox" target="" align="right" />
+          </styles.LinksContainer>
+        )}
+      </styles.MobileNavContainer>
+    </styles.HeaderContainer>
   );
 };

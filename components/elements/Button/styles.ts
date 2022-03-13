@@ -8,6 +8,7 @@ export const ButtonContainer = styled.button`
   padding: 0px 16px;
   font-size: 16px;
   display: inline-flex;
+  border: none;
   @media (min-width: 768px) {
     font-size: 28px;
   }

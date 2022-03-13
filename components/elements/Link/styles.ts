@@ -10,15 +10,22 @@ const leftRight = () => keyframes`
 `;
 
 export const LinkContainer = styled.div`
-  min-width: 110px;
-  margin: 16px;
+  min-width: 80px;
+  @media (min-width: 768px) {
+    min-width: 110px;
+  }
   position: relative;
+  margin-bottom: 20px;
   :hover {
     cursor: pointer;
   }
   p {
     color: ${(props) => props.theme.colors.white};
-    font-size: 28px;
+    text-align: ${(props) => props.align};
+    font-size: 20px;
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
   }
   p:after {
     content: "";

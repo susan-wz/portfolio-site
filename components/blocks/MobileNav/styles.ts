@@ -1,35 +1,35 @@
 import styled from "styled-components";
 
-export const MobileNavContainer = styled.div`
+export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
+export const MobileNavContainer = styled.div``;
+
 export const MenuToggle = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
   z-index: 1;
   user-select: none;
   button {
     display: flex;
+    flex-direction: column;
     width: 40px;
     height: 32px;
-    position: absolute;
+    background: ${(props) => props.theme.colors.primary};
     cursor: pointer;
     z-index: 2;
-    opacity: 0;
     padding: 0px;
     border: 0px;
   }
-  span {
+  p {
     opacity: 1;
     display: flex;
-    width: 29px;
+    width: 40px;
     height: 2px;
-    margin-bottom: 5px;
-    position: relative;
+    margin-bottom: 8px;
     background: ${(props) => props.theme.colors.secondary};
     border-radius: 3px;
     z-index: 1;
@@ -40,15 +40,12 @@ export const MenuToggle = styled.div`
 `;
 
 export const LinksContainer = styled.ul`
-  // position: absolute;
-  // width: 90px;
-  // height: 200px;
-  // margin: -50px 0 0 -50px;
-  // padding: 50px;
-  // padding-top: 125px;
+  position: absolute;
   transform-origin: 0% -100%;
   transform: translate(0, 0);
   transition: transform 1s cubic-bezier(0.77, 0.2, 0.05, 1);
+  width: 148px;
+  right: 48px;
 `;
 
 export const LinkWrapper = styled.li`

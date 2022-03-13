@@ -9,8 +9,9 @@ export const NavContainer = styled.div`
   padding-right: inherit;
   left: 0;
   right: 0;
-`;
+  `;
 
-export const LinksContainer = styled.div`
+  export const LinksContainer = styled.div`
   display: flex;
+  gap: 24px;
 `;
